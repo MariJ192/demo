@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="356.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.CrearEditarUsuarios">
+   <children>
+      <TextField fx:id="lblLogin" layoutX="26.0" layoutY="116.0" prefHeight="26.0" prefWidth="394.0" />
+      <Label layoutX="26.0" layoutY="89.0" prefHeight="26.0" prefWidth="394.0" text="Login" />
+      <Label layoutX="26.0" layoutY="152.0" prefHeight="26.0" prefWidth="394.0" text="Password" />
+      <TextField fx:id="lblPass" layoutX="26.0" layoutY="178.0" prefHeight="26.0" prefWidth="394.0" />
+      <Label layoutX="26.0" layoutY="219.0" prefHeight="26.0" prefWidth="394.0" text="Nombre" />
+      <TextField fx:id="lblNombre" layoutX="26.0" layoutY="245.0" prefHeight="26.0" prefWidth="394.0" />
+      <Label layoutX="26.0" layoutY="279.0" prefHeight="26.0" prefWidth="394.0" text="Apellidos" />
+      <TextField fx:id="lblApellido" layoutX="26.0" layoutY="305.0" prefHeight="26.0" prefWidth="394.0" />
+      <ButtonBar layoutX="460.0" layoutY="400.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="btnAniadir" mnemonicParsing="false" onAction="#agregarUsuario" text="Agregar" />
+            <Button fx:id="btnCancelar" layoutX="135.0" layoutY="17.0" mnemonicParsing="false" text="Cancelar" />
+        </buttons>
+      </ButtonBar>
+      <Label fx:id="lblTituloWind"  layoutX="62.0" layoutY="18.0" prefHeight="47.0" prefWidth="525.0" />
+   </children>
+</AnchorPane>

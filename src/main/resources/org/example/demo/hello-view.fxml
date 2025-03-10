@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="13.0" prefHeight="42.0" prefWidth="600.0" text="App de gestión de alumnos" />
+      <MenuButton fx:id="menu" alignment="CENTER" layoutX="209.0" layoutY="83.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="182.0" text="Gestión">
+        <items>
+          <MenuItem id="usuarios" fx:id="usuarios" onAction="#btnUsuarios" mnemonicParsing="false" text="Usuarios" />
+          <MenuItem fx:id="informes" mnemonicParsing="false" text="Informes" />
+            <MenuItem fx:id="salir" mnemonicParsing="false" onAction="#btnSalirApp" text="Salir" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
